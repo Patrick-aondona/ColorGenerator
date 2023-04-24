@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+</head>
+<body>
+    <style>
+        body{
+            background: linear-gradient(to right, #ffff00, #ff0000);
+        }
+        #control-panel{
+            position: fixed;
+            padding: 10px;
+            bottom: 4%;
+            width: 95%;
+            height: 30px;
+            display: flex;
+            background-color: rgb(0,0,0,0.4);
+            color: #ffff;
+        }
+        .input-right{
+            margin-left: auto;
+        }
+        span{
+            background-color: black;
+            border-radius: 5px;
+            padding: 5px 2px 5px 2px;
+        }
+
+
+    </style>
+    
+    <div id="control-panel">
+        <div class="input-left">
+            Select color for left-side: <input id="left-color" type="color" value="#ffff00">
+            <span id="leftColorValue"></span>
+        </div>
+        <div class="input-right">
+            Select color for right-side: <input id="right-color" type="color" value="#ff0000">
+            <span id="rightColorValue"></span>
+        </div>
+
+
+    </div>
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
